@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Expense_Manager</string>
+    <string name="transaction">Transactions</string>
+    <string name="records">Records</string>
+    <string name="Debit_Text">Debit</string>
+    <string name="Credit_Text">Credit</string>
+    <string name="submit">Submit</string>
+</resources>

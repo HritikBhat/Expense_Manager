@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/transact"
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="75dp"
+        android:background="#2AC6DC"
+        android:text="@string/transaction"
+        android:textColor="#F5F3F2"
+        android:textSize="@dimen/Start_Button_Log"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/records"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/records"
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="286dp"
+        android:background="#2AC6DC"
+        android:text="@string/records"
+        android:textColor="#F5F3F2"
+        android:textSize="@dimen/Start_Button_Log"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transact"
+        tools:layout_editor_absoluteX="55dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
