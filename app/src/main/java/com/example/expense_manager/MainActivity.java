@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         transaction=findViewById(R.id.transact);
-        records=findViewById(R.id.records);
+        records=findViewById(R.id.submit_but);
 
         transaction.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -10,36 +10,28 @@
         android:id="@+id/reason"
         android:layout_width="261dp"
         android:layout_height="60dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginLeft="75dp"
         android:layout_marginTop="45dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginRight="75dp"
         android:layout_marginBottom="35dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Reason"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/amount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <EditText
         android:id="@+id/amount"
         android:layout_width="261dp"
         android:layout_height="60dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
         android:layout_marginTop="35dp"
-        android:layout_marginEnd="71dp"
-        android:layout_marginRight="71dp"
         android:layout_marginBottom="170dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Amount"
-        app:layout_constraintBottom_toTopOf="@+id/records"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/submit_but"
+        app:layout_constraintEnd_toEndOf="@+id/reason"
+        app:layout_constraintStart_toStartOf="@+id/reason"
         app:layout_constraintTop_toBottomOf="@+id/reason" />
 
     <LinearLayout
@@ -56,7 +48,7 @@
         app:layout_constraintBottom_toTopOf="@+id/reason"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        app:layout_constraintTop_toBottomOf="@+id/type_text">
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -65,12 +57,14 @@
             tools:ignore="RtlHardcoded">
 
             <RadioButton
+                android:id="@+id/debit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Debit_Text"
                 android:textSize="@dimen/Radiobutton_Size" />
 
             <RadioButton
+                android:id="@+id/credit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10sp"
@@ -80,7 +74,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/type_text"
         android:layout_width="58dp"
         android:layout_height="38dp"
         android:layout_marginStart="85dp"
@@ -97,7 +91,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/records"
+        android:id="@+id/submit_but"
         android:layout_width="match_parent"
         android:layout_height="65sp"
         android:layout_marginBottom="73dp"

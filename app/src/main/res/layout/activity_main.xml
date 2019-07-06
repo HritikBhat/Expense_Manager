@@ -18,11 +18,11 @@
         android:textColor="#F5F3F2"
         android:textSize="@dimen/Start_Button_Log"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/records"
+        app:layout_constraintBottom_toTopOf="@+id/submit_but"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/records"
+        android:id="@+id/submit_but"
         android:layout_width="match_parent"
         android:layout_height="65sp"
         android:layout_marginTop="50dp"
