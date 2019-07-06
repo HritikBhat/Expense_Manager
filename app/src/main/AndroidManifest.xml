@@ -11,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".transactions_Activity" android:label="@string/transaction"></activity>
+        <activity android:name=".activity_transactions_confirm"></activity>
+        <activity
+            android:name=".transactions_Activity"
+            android:label="@string/transaction" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
